@@ -1,8 +1,8 @@
 I = imread('peppers.tiff');
 
-I2 = fliplr(I);
-I3 = flipud(I);
-I4 = rot90(I, 2);
+I2 = rot90(I);
+I3 = rot90(I, 2);
+I4 = rot90(I, 3);
 
 subplot(2, 2, 1), imshow(I);
 subplot(2, 2, 2), imshow(I2);
