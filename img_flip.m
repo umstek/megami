@@ -1,8 +1,10 @@
+%% Flip an image 
+
 I = imread('peppers.tiff');
 
-I2 = fliplr(I);
-I3 = flipud(I);
-I4 = rot90(I, 2);
+I2 = fliplr(I);     % vertical 
+I3 = flipud(I);     % horizontal 
+I4 = rot90(I, 2);   % both 
 
 subplot(2, 2, 1), imshow(I);
 subplot(2, 2, 2), imshow(I2);
