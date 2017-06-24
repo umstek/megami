@@ -11,7 +11,7 @@ I2 = zeros(size(I));
 
 for i = 1:size(I, 1)
     for j = 1:size(I, 2)
-        I2(i, j) = median(reshape(paddedI(i+1-1:i+bs-1, j+1-1:j+bs-1)', bs*bs, 1));
+        I2(i, j) = median(reshape(paddedI(i:i+bs-1, j:j+bs-1)', bs*bs, 1));
     end
 end
 
