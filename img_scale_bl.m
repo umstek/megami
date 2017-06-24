@@ -1,4 +1,4 @@
-%% Scale up by adding n-1 lines
+%% Scale up by bilinear method
 
 I = imread('easter-eggs.png');
 [h, w, c] = size(I);
